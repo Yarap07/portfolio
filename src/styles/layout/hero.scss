@@ -1,7 +1,69 @@
 .hero {
-  border: 2px solid red;
   height: 100vh;
+  font-family: $main-font;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 300px;
+  background-color: rgb(24, 22, 22);
+  background-image: url(../../images/Final-Fantasy-VII-Remake-PNG-Free-Download.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 87%;
   &__title {
-    font-family: $main-font;
+    width: 550px;
+    margin-left: 100px;
+    color: white;
+  }
+  &__welcome {
+    font-size: rem(100);
+    margin-bottom: 10px;
+  }
+  &__edition {
+    font-size: rem(30);
+  }
+  &__menu {
+    margin-left: 100px;
+    margin-bottom: 30px;
+    font-size: rem(20);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 5px;
+    box-shadow: cadetblue;
+  }
+  &__list__item {
+    width: 200px;
+    background: linear-gradient(to right, white, rgb(171, 163, 163));
+  }
+  &__link {
+    &--newGame,
+    &--loadGame {
+      display: block;
+      text-decoration: none;
+      color: rgb(16, 15, 15);
+      font-weight: 500;
+      padding: 7px 0px;
+      padding-right: 70px;
+      padding-left: 7px;
+    }
+    &--continue {
+      display: block;
+      text-decoration: none;
+      color: rgb(16, 15, 15);
+      font-weight: 500;
+      padding: 7px 0px;
+      padding-right: 70px;
+      padding-left: 7px;
+    }
+    &--options {
+      display: block;
+      text-decoration: none;
+      color: rgb(16, 15, 15);
+      font-weight: 500;
+      padding: 7px 0px;
+      padding-right: 70px;
+      padding-left: 7px;
+    }
   }
 }
