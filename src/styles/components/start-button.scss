@@ -1,0 +1,27 @@
+.start__btn {
+  width: 400px;
+  height: 80px;
+  background: transparent;
+  border: none;
+  //   box-shadow: 0 0 20px rgb(112, 114, 113); //the third parameter indicates the distance of the degraded, that makes the shadow grow and expand like a shine
+  text-shadow: 0 0 30px rgb(226, 224, 183);
+  position: absolute;
+  top: 45%;
+  left: 38%;
+  z-index: 1;
+  font-size: rem(55);
+  animation: startColor linear;
+  animation-duration: 15s;
+  animation-fill-mode: forwards;
+  transition: all 2s;
+  font-weight: 800;
+  cursor: pointer;
+  &:hover {
+    animation: 5s ease-out;
+    transform: scale(1.5);
+    transition: all 2s;
+    color: rgb(226, 238, 97);
+  }
+  &::before {
+  }
+}

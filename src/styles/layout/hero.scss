@@ -5,11 +5,15 @@
   flex-direction: column;
   justify-content: center;
   gap: 300px;
-  background-color: rgb(24, 22, 22);
-  background-image: url(../../images/Final-Fantasy-VII-Remake-PNG-Free-Download.png);
+  background-color: rgb(20, 19, 19);
+  background-image: url(../../images/portfolio-2.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 87%;
+  animation: 1s ease-out 0s 1;
+  animation-name: popUp;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
   &__title {
     width: 550px;
     margin-left: 100px;
@@ -18,8 +22,20 @@
   &__welcome {
     font-size: rem(100);
     margin-bottom: 10px;
+    position: relative;
+  }
+  &__bottom--border {
+    position: absolute;
+    border-bottom: 5px solid white;
+    width: 300px;
+    top: 108%;
+    left: 1%;
+    bottom: 0;
   }
   &__edition {
+    position: relative;
+    top: 11%;
+    left: 0.8%;
     font-size: rem(30);
   }
   &__menu {
@@ -30,11 +46,16 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
     grid-gap: 5px;
-    box-shadow: cadetblue;
   }
   &__list__item {
     width: 200px;
-    background: linear-gradient(to right, white, rgb(171, 163, 163));
+    background: linear-gradient(
+      to right,
+      rgb(220, 211, 211),
+      rgba(35, 33, 33, 0.2)
+    );
+    border: 2px outset #62626a;
+    text-shadow: -1px -1px rgba(16, 16, 16, 0.2);
   }
   &__link {
     &--newGame,
@@ -45,7 +66,7 @@
       font-weight: 500;
       padding: 7px 0px;
       padding-right: 70px;
-      padding-left: 7px;
+      padding-left: 15px;
     }
     &--continue {
       display: block;
@@ -54,7 +75,7 @@
       font-weight: 500;
       padding: 7px 0px;
       padding-right: 70px;
-      padding-left: 7px;
+      padding-left: 15px;
     }
     &--options {
       display: block;
@@ -63,7 +84,7 @@
       font-weight: 500;
       padding: 7px 0px;
       padding-right: 70px;
-      padding-left: 7px;
+      padding-left: 15px;
     }
   }
 }
